@@ -1,34 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
     <title>Filter Image Gallery</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <!--Filter Button Start-->
-        <div class="filter-buttons">
-            <button class="active" data-name="all">Show All Design</button>
-            <button data-name="phones">FrontEnd Design</button>
-            <button data-name="clothes">Backend Design</button>
-            <button data-name="shoes">Others Design</button>
-        </div>
+      <!--Filter Button Start-->
+      <div class="filter-buttons">
+        <button class="active" data-name="all">Show All Design</button>
+        <button data-name="Frontend">FrontEnd Design</button>
+        <button data-name="Backend">Backend Design</button>
+        <button data-name="Others">Others Design</button>
+      </div>
     </div>
-    <!--Card Image start-->
+    <!-- Frontend Card start-->
     <div class="filter-card">
-        <div class="card" data-name="phones">
-            <img src="images/phone-1.jpg" alt="">
-            <div class="card-body">
-                <h6 class="card-title">Phone</h6>
-                <p class="card-description">Lorem ipsum......</p>
-            </div>
+      <div class="card" data-name="Frontend">
+        <img src="images/front end/front1.jpg" alt="Frontend" />
+        <div class="card-body">
+          <h6 class="card-title">FrontEnd Design</h6>
+          <p class="card-description">Lorem ipsum......</p>
         </div>
-    </div>
-    <script src="script/script.js " defer></script>
-</body>
+      </div>
 
+
+      <div class="card" data-name="Frontend">
+        <img src="images/front end/front3.jpg" alt="Frontend" />
+        <div class="card-body">
+          <h6 class="card-title">FrontEnd Design</h6>
+          <p class="card-description">Lorem ipsum......</p>
+        </div>
+      </div>
+
+
+      <div class="card" data-name="Frontend">
+        <img src="images/front end/front2.jpg" alt="Frontend" />
+        <div class="card-body">
+          <h6 class="card-title">FrontEnd Design</h6>
+          <p class="card-description">Lorem ipsum......</p>
+        </div>
+      </div>
+<!-- Backend Card start-->
+      <div class="card" data-name="Backend">
+        <img src="images/backend/back1.jpg" alt="Backend" />
+        <div class="card-body">
+          <h6 class="card-title">BackEnd Design</h6>
+          <p class="card-description">Lorem ipsum......</p>
+        </div>
+      </div>
+
+      <div class="card" data-name="Backend">
+        <img src="images/backend/back2.jpg" alt="Backend" />
+        <div class="card-body">
+          <h6 class="card-title">BackEnd Design</h6>
+          <p class="card-description">Lorem ipsum......</p>
+        </div>
+      </div>
+
+      <div class="card" data-name="Backend">
+        <img src="images/backend/back3.jpg" alt="Backend" />
+        <div class="card-body">
+          <h6 class="card-title">BackEnd Design</h6>
+          <p class="card-description">Lorem ipsum......</p>
+        </div>
+      </div>
+      <!-- others Card start-->
+      <div class="card" data-name="Others">
+        <img src="images/others/others1.jpg" alt="Others" />
+        <div class="card-body">
+          <h6 class="card-title">Others Design</h6>
+          <p class="card-description">Lorem ipsum......</p>
+        </div>
+      </div>
+
+      <div class="card" data-name="Others">
+        <img src="images/others/others2.png" alt="Others" />
+        <div class="card-body">
+          <h6 class="card-title">Others Design</h6>
+          <p class="card-description">Lorem ipsum......</p>
+        </div>
+      </div>
+
+      <div class="card" data-name="Others">
+        <img src="images/others/others3.jpg" alt="Others" />
+        <div class="card-body">
+          <h6 class="card-title">Others Design</h6>
+          <p class="card-description">Lorem ipsum......</p>
+        </div>
+      </div>
+    </div>
+   
+
+    <script src="script/script.js " defer></script>
+  </body>
 </html>
