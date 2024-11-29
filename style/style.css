@@ -13,6 +13,54 @@ body {
     background: #e7f2fd;
 }
 
+/* Navigation Bar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    padding: 10px 20px;
+    color: white;
+}
+
+nav .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 21px;
+}
+
+.menu-toggle .bar {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+
+/*- Navigation Design End--*/
+
 .container {
     position: relative;
     max-width: 1350px;
@@ -84,4 +132,42 @@ display: none;
 .card-description {
     font-size: 18px;
     color: #333;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav .menu-toggle {
+        display: flex;
+    }
+
+    .products {
+        justify-content: center;
+    }
+
+    .product {
+        width: 150px;
+    }
+}
+
+/* Tablet view */
+@media (max-width: 1024px) {
+    .products {
+        justify-content: space-between;
+    }
+
+    .product {
+        width: 200px;
+    }
 }

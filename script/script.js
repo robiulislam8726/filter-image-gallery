@@ -17,3 +17,27 @@ const filterCard = e => {
 };
 //Add Click event listener to each button
 filterButtons.forEach(button => button.addEventListener("click",filterCard));
+
+
+// Handle the mobile menu toggle
+const mobileMenu = document.getElementById('mobile-menu');
+const navLinks = document.querySelector('.nav-links');
+
+// Toggle the menu visibility on mobile
+mobileMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+// Handle cart update functionality
+let cartCount = 0;
+const addToCartButtons = document.querySelectorAll('.add-to-cart');
+const cartCountElement = document.getElementById('cart-count');
+
+// Event listener for the Add to Cart button
+addToCartButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        cartCount++;  // Increment the cart count
+        cartCountElement.textContent = cartCount;  // Update the cart count in the navigation
+        alert('Product added to cart!');
+    });
+});
