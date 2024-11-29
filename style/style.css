@@ -239,13 +239,12 @@ display: none;
     opacity: 1;
     z-index: 1;
 }
+
 @media only screen and (max-width: 400px){
     .popup-box-container{
         width: 300px;
     }
 }
-
-
 
 @media (max-width: 768px) {
     nav ul {
